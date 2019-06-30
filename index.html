@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="gamePlayScreen">
+            <h1><strong>The Psychic Game</strong></h1>
+            <p>First to three!</p>
+            <p id="user-guess">Whats your guess</p>
+            <input type="text" id="playerInput" onkeyup="PlayerKeypress()">
+            <p >You are killing it by winning <span id="wins">0</span> games!</p>
+            <p>You Suck, try harder... <span id="losses">0</span> time loser</p>
+            <p>You have <span id="guesses-left">0</span> left! Dont Screw this up...</p>
+            <p>Because you cant remeber! These were wrong...<span id="so-far"></span></p>
+        </div>
+        <div class="buttons">
+            <hr>
+            <button id="redo" style="visibility: hidden;" onclick="RestartGame()">Do Over!</button>
+        </div>
+        <script src="assets/javascript/game.js"></script>
+    </body>
+</html>
